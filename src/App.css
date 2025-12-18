@@ -1,42 +1,127 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* ========================================
+   CHEF ORIGIN - COMPONENT COLOR UTILITIES
+   Professional Styling Mixins & Utilities
+   ======================================== */
+
+/* Primary Color Components */
+.bg-primary-accent {
+  background-color: var(--color-primary-accent);
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.text-primary-accent {
+  color: var(--color-primary-accent);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.border-primary-accent {
+  border-color: var(--color-primary-accent);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* Background Color Utilities */
+.bg-primary {
+  background-color: var(--color-bg-primary);
 }
 
-.card {
-  padding: 2em;
+.bg-light {
+  background-color: var(--color-bg-light);
 }
 
-.read-the-docs {
-  color: #888;
+.bg-dark {
+  background-color: var(--color-bg-dark);
+}
+
+/* Text Color Utilities */
+.text-primary {
+  color: var(--color-text-primary);
+}
+
+.text-light {
+  color: var(--color-text-light);
+}
+
+.text-lighter {
+  color: var(--color-text-lighter);
+}
+
+/* Button Utilities */
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--color-primary-accent);
+  border-color: var(--color-primary-accent);
+}
+
+.btn-outline {
+  color: var(--color-primary-accent);
+  border-color: var(--color-primary-accent);
+}
+
+.btn-outline:hover {
+  background-color: var(--color-primary-accent);
+  color: white;
+}
+
+/* Card & Container Styling */
+.card-custom {
+  background-color: white;
+  border: 1px solid var(--color-primary-accent-lighter);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: var(--shadow-md);
+  transition: all 0.3s ease;
+}
+
+.card-custom:hover {
+  box-shadow: var(--shadow-lg);
+  border-color: var(--color-primary-accent);
+}
+
+/* Form Input Styling */
+.input-custom,
+.textarea-custom,
+.select-custom {
+  border-color: var(--color-bg-dark);
+  color: var(--color-text-primary);
+}
+
+.input-custom:focus,
+.textarea-custom:focus,
+.select-custom:focus {
+  border-color: var(--color-primary-accent);
+  box-shadow: 0 0 0 3px rgba(245, 74, 0, 0.1);
+}
+
+/* Badge & Label Styling */
+.badge-custom {
+  background-color: var(--color-primary-accent-lighter);
+  color: var(--color-primary-accent);
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+}
+
+/* Loading Spinner Color */
+.loading-spinner {
+  color: var(--color-primary-accent);
+}
+
+/* Hero Section */
+.hero-custom {
+  background: linear-gradient(
+    135deg,
+    var(--color-primary-accent) 0%,
+    var(--color-primary-accent) 100%
+  );
+  color: white;
+}
+
+/* Error & Success Messages */
+.alert-success {
+  background-color: rgba(16, 185, 129, 0.1);
+  border-color: #10b981;
+  color: var(--color-text-primary);
+}
+
+.alert-error {
+  background-color: rgba(239, 68, 68, 0.1);
+  border-color: #ef4444;
+  color: var(--color-text-primary);
 }

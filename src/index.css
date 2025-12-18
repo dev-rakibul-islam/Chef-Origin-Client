@@ -1,2 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Geom:ital,wght@0,300..900;1,300..900&display=swap");
 @import "tailwindcss";
 @plugin "daisyui";
+
+/* ========================================
+   CHEF ORIGIN - PROFESSIONAL COLOR SYSTEM
+   ======================================== */
+
+/* CSS Color Variables */
+:root {
+  /* Primary Colors */
+  --color-primary-accent: #f54a00; /* Vibrant Orange */
+  --color-primary-accent-light: #ffad7a;
+  --color-primary-accent-lighter: #ffe4d4;
+
+  /* Background Colors */
+  --color-bg-primary: #fff7ed; /* Warm Off-White */
+  --color-bg-light: #fffbf7;
+  --color-bg-dark: #f5e6d3;
+
+  /* Text Colors */
+  --color-text-primary: #333333; /* Deep Black/Dark Gray */
+  --color-text-light: #666666;
+  --color-text-lighter: #999999;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px rgba(245, 74, 0, 0.1);
+  --shadow-lg: 0 10px 25px rgba(245, 74, 0, 0.15);
+  --shadow-xl: 0 20px 40px rgba(245, 74, 0, 0.2);
+}
+
+/* ========================================
+   GLOBAL STYLES
+   ======================================== */
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg-light);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary-accent-light);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary-accent);
+}
+
+/* Glassmorphism Utility */
+.glass-effect {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Card Hover Effect */
+.hover-card {
+  transition: all 0.3s ease;
+}
+
+.hover-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* ========================================
+   TYPOGRAPHY
+   ======================================== */
+
+/* ========================================
+   BUTTONS & INTERACTIVE ELEMENTS
+   ======================================== */
+
+/* Primary Button */
+.btn-primary,
+.btn-primary:hover {
+  background-color: var(--color-primary-accent);
+  border-color: var(--color-primary-accent);
+  color: white;
+  font-weight: 600;
+}
+
+/* Outline Button */
+.btn-outline {
+  color: var(--color-primary-accent);
+  border-color: var(--color-primary-accent);
+}
+
+.btn-outline:hover {
+  background-color: var(--color-primary-accent);
+  border-color: var(--color-primary-accent);
+  color: white;
+}
+
+/* Ghost Button */
+.btn-ghost {
+  color: var(--color-text-primary);
+}
+
+.btn-ghost:hover {
+  background-color: var(--color-bg-light);
+}
+
+/* ========================================
+   CARDS & CONTAINERS
+   ======================================== */
+
+.card {
+  background-color: white;
+  border: 1px solid rgba(245, 74, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: var(--shadow-lg);
+  border-color: var(--color-primary-accent);
+}
+
+/* ========================================
+   INPUTS & FORMS
+   ======================================== */
+
+/* ========================================
+   NAVIGATION & HEADER
+   ======================================== */
+
+/* ========================================
+   BADGES & LABELS
+   ======================================== */
+
+.badge {
+  background-color: rgba(245, 74, 0, 0.15);
+  color: var(--color-primary-accent);
+  border: 1px solid var(--color-primary-accent);
+}
+
+.badge-primary {
+  background-color: var(--color-primary-accent);
+  color: white;
+  border: none;
+}
+
+/* ========================================
+   DIVIDERS & SEPARATORS
+   ======================================== */
+
+.divider {
+  background-color: var(--color-bg-dark);
+  color: var(--color-text-light);
+}
+
+/* ========================================
+   UTILITY CLASSES
+   ======================================== */
+
+.text-accent {
+  color: var(--color-primary-accent);
+  font-weight: 600;
+}
+
+.bg-accent-light {
+  background-color: var(--color-primary-accent-lighter);
+}
+
+.border-accent {
+  border-color: var(--color-primary-accent);
+}
+
+.shadow-accent {
+  box-shadow: var(--shadow-lg);
+}
+
+/* ========================================
+   ANIMATIONS
+   ======================================== */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.5rem;
+  }
+}
