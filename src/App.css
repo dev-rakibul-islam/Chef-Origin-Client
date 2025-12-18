@@ -1,8 +1,3 @@
-/* ========================================
-   CHEF ORIGIN - COMPONENT COLOR UTILITIES
-   Professional Styling Mixins & Utilities
-   ======================================== */
-
 /* Primary Color Components */
 .bg-primary-accent {
   background-color: var(--color-primary-accent);
