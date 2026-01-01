@@ -24,6 +24,8 @@ import AdminRoute from "./AdminRoute";
 import ChefRoute from "./ChefRoute";
 import PageTitle from "../components/PageTitle";
 
+// Define application routes
+
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -95,6 +97,7 @@ export const router = createBrowserRouter([
       },
     ],
   },
+  // Dashboard Routes
   {
     path: "dashboard",
     element: (
